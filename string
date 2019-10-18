@@ -1,0 +1,56 @@
+#A.population density of any region
+pop_num=int(input("please insert population of any region \n"))
+pop_area=int(input("please insert area of any region \n"))
+pop_density=int(pop_num/pop_area)
+print("the population density is")
+print(pop_density)
+
+#B.Sales from monday to friday
+sum=0.0
+mon=float(input("please insert the sales of days "))
+tues=float(input("please insert the sales of days "))
+wen=float(input("please insert the sales of days "))
+thur=float(input("please insert the sales of days "))
+fri=float(input("please insert the sales of days "))
+sum= mon + tues + wen + thur + fri
+print("the sum of the sales is")
+print(sum)
+#C. Dictionary substing
+d2={'k1':{'k2':'university'}}
+print(d2['k1']['k2'][7:11])
+
+#Q.2
+#A Largest city Dictionary with their key
+pop=dict(Shanghai=17.8,
+         Istanbul=13.3,
+        Karachi=13.0 ,
+         Mumbai=12.5)
+print(pop.keys())
+print(pop)
+# B.Add oxgygen to gas element and find the weight of helium
+elements={"hydrogen": {"number":1 ,"weight" :1.00794, "symbol" :"H"},
+          "helium": {"number":2 ,"weight" :4.002602, "symbol" :"He"},
+          }
+elements['oxygen']=dict(number=8,weight=15.999,Symbol='o')
+print(elements)
+print(elements['helium']['weight'])
+#Q.3 A PROGRAM THAT ACCEPTS USERNAME AND MAXMUM NUMBER OF CHARATER
+max_char=10
+print("the maximum number of character for driving permit is")
+print(max_char)
+username=input("please insert your username \n")
+#lenght of the username client inputs
+num_char=len(username)
+#boolean comparison
+print(num_char==max_char)
+#the string of charater with in the driving permit limits
+print(username[0:10])
+#conversion of username to upper case
+converted_username=username.upper()
+print(converted_username)
+#print the middle charater from the string imported
+print(converted_username[5])
+#the second and the last charater from the string
+print(username[1:11])
+
+    
