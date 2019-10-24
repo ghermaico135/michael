@@ -1,0 +1,24 @@
+limited number of attempt to user
+def userinput():
+    username1="admin"
+    password1="password"
+    username=input("please insert username \n")
+    password=input("please insert your password")
+    if(username1==username or password1==password):
+        return "access granted"
+    else:
+        return "access denied"
+ #code which we can call for the program
+counter=0
+#username=input("please insert username \n")
+#password=input("please insert your password")
+
+access=userinput()
+while access=="access denied":
+    access = userinput()
+    print("wait for the next 30 second")
+    counter+=1
+    if counter==3:
+        break
+
+    
